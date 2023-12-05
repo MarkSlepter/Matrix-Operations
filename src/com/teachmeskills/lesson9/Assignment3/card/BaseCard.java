@@ -1,26 +1,51 @@
 package com.teachmeskills.lesson9.Assignment3.card;
 
 public abstract class BaseCard {
-    public  long cardNumber;
-    public  int cvv;
-    public  double balance;
-    public  long idCart;
-    public  int limit;
-    public  double commission;
-    public  String currency;
+    private static int count = 0;
 
-    public BaseCard(long cardNumber,
-                    int cvv, double balance,
-                    long idCart, int limit,
-                    double commission,
-                    String currency) {
+    private int id;
+    private String cardNumber;
+    private int cvc;
+    private int amount;
+
+    public BaseCard(String cardNumber, int amount) {
+        this.id = count++;
         this.cardNumber = cardNumber;
-        this.cvv = cvv;
-        this.balance = balance;
-        this.idCart = idCart;
-        this.limit = limit;
-        this.commission = commission;
-        this.currency = currency;
+        this.amount = amount;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public int getCvc() {
+        return cvc;
+    }
+
+    public void setCvc(int cvc) {
+        this.cvc = cvc;
+    }
+
+    public long getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public abstract int commission ();
+    public abstract boolean limitCheck(int amount);
 }

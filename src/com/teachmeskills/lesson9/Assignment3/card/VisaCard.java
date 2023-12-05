@@ -1,16 +1,23 @@
 package com.teachmeskills.lesson9.Assignment3.card;
 
 public class VisaCard extends BaseCard{
-    public static int limit = 6777;
-    public static double commission = 0.5;
-    public static String currency = "Euro";
-    public VisaCard(long cardNumber,
-                    int cvv,
-                    double balance,
-                    long idCart,
-                    int limit,
-                    double commission,
-                    String currency) {
-        super(cardNumber, cvv, balance, idCart, limit, commission, currency);
+    public VisaCard(String cardNumber, int amount) {
+        super(cardNumber, amount);
+    }
+
+    private static final int COMMISSION_VISACARD = 12;
+    private static final int TRANSFER_LIMIT_VISACARD = 1200;
+
+    @Override
+    public int commission() {
+        return COMMISSION_VISACARD;
+    }
+
+    @Override
+    public boolean limitCheck(int amount) {
+        if (getAmount() - amount < TRANSFER_LIMIT_VISACARD) {
+            return false;
+        }
+        return true;
     }
 }

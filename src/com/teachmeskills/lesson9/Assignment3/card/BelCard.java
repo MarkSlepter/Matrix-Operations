@@ -1,17 +1,22 @@
 package com.teachmeskills.lesson9.Assignment3.card;
-
 public class BelCard extends BaseCard{
-    public static int limit = 266;
-    public  static double commission = 10;
-    public static String currency = "BYN";
+    public BelCard(String cardNumber, int amount) {
+        super(cardNumber, amount);
+    }
 
-    public BelCard(long cardNumber,
-                   int cvv,
-                   double balance,
-                   long idCart,
-                   int limit,
-                   double commission,
-                   String currency) {
-        super(cardNumber, cvv, balance, idCart, limit, commission, currency);
+    private static final int COMMISSION_BELCARD = 8;
+    public static final int TRANSFER_LIMIT_BELCARD = 3000;
+
+    @Override
+    public int commission() {
+        return COMMISSION_BELCARD;
+    }
+
+    @Override
+    public boolean limitCheck(int amount) {
+        if (getAmount() - amount < TRANSFER_LIMIT_BELCARD) {
+            return false;
+        }
+        return true;
     }
 }

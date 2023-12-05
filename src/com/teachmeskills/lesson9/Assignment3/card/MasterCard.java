@@ -1,17 +1,23 @@
 package com.teachmeskills.lesson9.Assignment3.card;
 
 public class MasterCard extends BaseCard{
-    public static int limit = 700;
-    public static double commission = 1;
-    public static String currency = "USD";
+    public MasterCard(String cardNumber, int amount) {
+        super(cardNumber, amount);
+    }
 
-    public MasterCard(long cardNumber,
-                      int cvv,
-                      double balance,
-                      long idCart,
-                      int limit,
-                      double commission,
-                      String currency) {
-        super(cardNumber, cvv, balance, idCart, limit, commission, currency);
+    private static final int COMMISSION_MASTERCARD = 10;
+    public static final int TRANSFER_LIMIT_BELCARD = 1000;
+
+    @Override
+    public int commission() {
+        return COMMISSION_MASTERCARD;
+    }
+
+    @Override
+    public boolean limitCheck(int amount) {
+        if (getAmount() - amount < TRANSFER_LIMIT_BELCARD) {
+            return false;
+        }
+        return true;
     }
 }
