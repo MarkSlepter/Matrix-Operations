@@ -1,5 +1,5 @@
-package com.teachmeskills.lesson9.Assignment3.client;
-import com.teachmeskills.lesson9.Assignment3.card.BaseCard;
+package com.teachmeskills.lesson9.assignment3.client;
+import com.teachmeskills.lesson9.assignment3.card.BaseCard;
 
 public class Client {
     private String name;

@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.Assignment2;
+package com.teachmeskills.lesson9.assignment2;
 
 public class Runner {
     public static void main(String[] args) {

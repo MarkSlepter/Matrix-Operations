@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.Assignment3.card;
+package com.teachmeskills.lesson9.assignment3.card;
 
 public class MasterCard extends BaseCard{
     public MasterCard(String cardNumber, int amount) {

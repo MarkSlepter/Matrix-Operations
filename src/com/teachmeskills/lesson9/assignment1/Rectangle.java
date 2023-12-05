@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.Assignment1;
+package com.teachmeskills.lesson9.assignment1;
 
 final class Rectangle extends Figure {
     private final double length;

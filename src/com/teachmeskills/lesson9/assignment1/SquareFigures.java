@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.Assignment1;
+package com.teachmeskills.lesson9.assignment1;
 import java.util.Scanner;
 public class SquareFigures {
     public static void main(String[] args) {

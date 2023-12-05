@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.Assignment1;
+package com.teachmeskills.lesson9.assignment1;
 
 public sealed class Figure permits Rectangle, Circle, Triangle {
     public double calculateArea() {
