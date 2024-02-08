@@ -1,5 +1,3 @@
-# TeachMeSkills_C26_Lesson_9_HW
-This repository contains my homework assignment number 9
 # Task 1
 Improve the task with figures
 Use the Sealed modifier for the "Shape" class. 
