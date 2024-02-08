@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.assignment2;
+package assignment2;
 
 public class Utils {
     public static void printMatrix(int[][] matrix) {

@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.assignment3.card;
+package assignment3.card;
 public class BelCard extends BaseCard{
     public BelCard(String cardNumber, int amount) {
         super(cardNumber, amount);

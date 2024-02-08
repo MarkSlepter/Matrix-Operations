@@ -1,6 +1,6 @@
-package com.teachmeskills.lesson9.assignment3.service;
+package assignment3.service;
 
-import com.teachmeskills.lesson9.assignment3.card.BaseCard;
+import assignment3.card.BaseCard;
 
 public class TransferBetweenCards {
     public static void doTransfer(BaseCard cardFrom, BaseCard cardTo, int amountToTransfer){

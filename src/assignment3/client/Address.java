@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.assignment3.client;
+package assignment3.client;
 
 public class Address {
     private String postIndex;

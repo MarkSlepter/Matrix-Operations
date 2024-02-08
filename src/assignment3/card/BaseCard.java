@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.assignment3.card;
+package assignment3.card;
 
 public abstract class BaseCard {
     private static int count = 0;

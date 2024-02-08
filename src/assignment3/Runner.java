@@ -1,12 +1,12 @@
-package com.teachmeskills.lesson9.assignment3;
+package assignment3;
 
-import com.teachmeskills.lesson9.assignment3.card.BaseCard;
-import com.teachmeskills.lesson9.assignment3.card.BelCard;
-import com.teachmeskills.lesson9.assignment3.card.MasterCard;
-import com.teachmeskills.lesson9.assignment3.card.VisaCard;
-import com.teachmeskills.lesson9.assignment3.client.Address;
-import com.teachmeskills.lesson9.assignment3.client.Client;
-import com.teachmeskills.lesson9.assignment3.service.TransferBetweenCards;
+import assignment3.card.BaseCard;
+import assignment3.card.BelCard;
+import assignment3.card.MasterCard;
+import assignment3.card.VisaCard;
+import assignment3.client.Address;
+import assignment3.client.Client;
+import assignment3.service.TransferBetweenCards;
 
 import java.util.Scanner;
 public class Runner {

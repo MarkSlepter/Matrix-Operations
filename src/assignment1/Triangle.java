@@ -1,4 +1,4 @@
-package com.teachmeskills.lesson9.assignment1;
+package assignment1;
 
 final class Triangle extends Figure {
     private final double firstSide;
